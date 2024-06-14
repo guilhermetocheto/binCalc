@@ -1,6 +1,6 @@
 <h1>Binary Calculator</h1>
 
-> Status: Developing ⚠️
+> Status: Under development ⚠️
 
 ### A binary calculator(and another functions) for an academic work
 
