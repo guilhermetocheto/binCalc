@@ -1,0 +1,177 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(180deg, #050505, #161414);
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*
+MENU
+*/
+
+/* Style the header with a grey background and some padding */
+.menu {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  border-radius: 16px;
+  height: 455px;
+  padding: 20px 35px;
+}
+
+/* Style the header links */
+.menu a {
+  float: none;
+  display: block;
+  text-align: left;
+  color: black;
+  text-align: center;
+  padding: 10% 0;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 16px;
+  margin: 10% 0;
+  width: 326px;
+}
+
+/* Change the background color on mouse-over */
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.menu a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/*
+CONVERSOR COMPLEMENTO DE DOIS
+*/
+
+.wrapper {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  height: 455px;
+  padding: 20px 35px;
+}
+
+.screen {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  font-size: 30px;
+  overflow: auto;
+  padding: 20px;
+  text-align: right;
+  width: 326px;
+}
+
+.result-screen {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  font-size: 30px;
+  overflow: auto;
+  padding: 20px;
+  text-align: right;
+  width: 326px;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 65px;
+}
+
+.operator {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #fff;
+  background: #d72880;
+}
+
+.operator:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.calc-button:hover {
+  background-color: inherit;
+}
+
+.calc-button:active {
+  background-color: #ffef78;
+}
+
+.double {
+  flex-basis: 47%;
+}
+
+.full {
+  flex-basis: 100%;
+}
+
+.terco {
+  flex-basis: 30%;
+}

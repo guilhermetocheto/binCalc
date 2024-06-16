@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/twoComplement.css" />
     <title>Conversor para complemento de dois</title>
   </head>
   <body>
@@ -16,8 +16,24 @@
     </div>
 
     <div class="wrapper">
-      <input type="number" class="screen" />
-      <input type="number" class="screen" />
+      <section class="screen">0</section>
+
+      <section class="calc-buttons">
+        <div class="calc-button-row">
+          <button class="calc-button double">C</button>
+          <button class="calc-button double">&larr;</button>
+        </div>
+        <div class="calc-button-row">
+          <button class="calc-button double">0</button>
+          <button class="calc-button double">1</button>
+        </div>
+        <div class="calc-button-row">
+          <button class="calc-button operator full">&equals;</button>
+        </div>
+      </section>
+      <section class="result-screen">0</section>
     </div>
+
+    <script src="../scripts/twoComplement.js"></script>
   </body>
 </html>

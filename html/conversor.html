@@ -18,15 +18,25 @@
     <div class="wrapper">
       <div class="elements-row">
         <h3>Conversão de decimal para binario</h3>
-        <input type="number" class="screen" />
-        <select id="bases">
-          <option value="binary">Binário</option>
-          <option value="hexadecimal">Hexadecimal</option>
-          <option value="octal">Octal</option>
-        </select>
-        <input type="number" class="screen" readonly />
-        <input type="submit" value="Enviar" />
+        <form action="" class="form">
+          <input type="number" class="screen" name="screen" />
+          <select id="bases" name="bases">
+            <option value="binary">Binário</option>
+            <option value="hexadecimal">Hexadecimal</option>
+            <option value="octal">Octal</option>
+          </select>
+          <input
+            type="text"
+            class="result-screen"
+            name="result-screen"
+            value=""
+            readonly
+          />
+          <input type="submit" value="converter" id="converte" />
+        </form>
       </div>
     </div>
+
+    <script src="../scripts/converter.js"></script>
   </body>
 </html>
